@@ -1,0 +1,9 @@
+recommended requirements install {
+	cd to home directory
+	install npm
+	run npm install for required libraries
+}
+
+required libraries {
+	jquery.min.js 	
+}
