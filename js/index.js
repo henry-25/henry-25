@@ -9,6 +9,7 @@ var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
 		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
 
+$('#nextPageRow').hide();
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
@@ -65,12 +66,14 @@ function stopBall() {
 function startBall() {
 	dx = 2;
 	dy = -2;
-	document.getElementById("nextPageRow").style["display"] = "none";
+	$('#nextPageRow').hide();
+	// document.getElementById("nextPageRow").style["display"] = "none";
 }
 
 function checkBallLocation() {
 	if(checkCorners(x, y)) {
-		document.getElementById("nextPageRow").style["display"] = "block";
+		$('#nextPageRow').show();
+		// document.getElementById("nextPageRow").style["display"] = "block";
 		changeBallColor();
 	} else {
 		console.log(canvas.width, canvas.height, x, y);
@@ -78,18 +81,17 @@ function checkBallLocation() {
 }
 
 function checkCorners(xCord, yCord) {
-	if(xCord < 40 && yCord < 40) {
+	if(xCord < 30 && yCord < 30) {
 		return true;
-	} else if (xCord < 40 && yCord > 110) {
+	} else if (xCord < 30 && yCord > 120) {
 		return true;
-	} else if (xCord > 260 && yCord < 40) {
+	} else if (xCord > 270 && yCord < 30) {
 		return true;
-	} else if (xCord > 260 && yCord > 110) {
+	} else if (xCord > 270 && yCord > 120) {
 		return true;
 	} else {
 		return false;
 	}
 }
-
 
 setInterval(draw, 20);

@@ -16,8 +16,6 @@
 </head>
 
 <body>
-
-
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -45,7 +43,7 @@
 	</nav>
 
 	<div id="container-fluid">
-		<div class="btn-group btn-group-justified" role="group">
+		<div class="btn-group btn-group-justified" id="button-group-stick-to-top" role="group">
 			<div class="btn-group" role="group">
 				<button type="button" class="btn btn-default" onclick="changeBallColor()">Change Ball Color</button>
 			</div>
@@ -62,14 +60,14 @@
 				<button type="button" class="btn btn-default" onclick="startBall()">Start Ball</button>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="row-stick-to-top">
 			<div class="col-md-2 col-md-offset-5">
 				<p> To get to the next page stop the ball in one of the four corners </p>
 			</div>
 		</div>
-		<div id="nextPageRow" class="row" style="display: none">
+		<div id="nextPageRow" class="row">
 			<div class="col-md-2 col-md-offset-5">
-				<a href="html/first_page.html">Continue On</a>
+				<a href="html/last_page.html">Continue On</a>
 			</div>
 		</div>
 		<canvas id="myCanvas"></canvas>
