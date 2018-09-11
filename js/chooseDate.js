@@ -25,6 +25,7 @@ $(document).ready(function() {
       // console.log(response);
     }).fail(function(response) {
       console.log(response);
+      alert("Please enter a valid date after june 16, 1995 up to today!")
     });
   });
   var today = new Date();
