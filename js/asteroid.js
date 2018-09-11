@@ -15,7 +15,7 @@ $(document).ready(function() {
 		  	var neo = response.near_earth_objects;
 		  	for(i in neo) {
 		  		for(j in neo[i]) {
-		  			$("#asteroidDataTable > tbody:last-child").append("<tr><td>" + neo[i][j].id + "</td><td>" + neo[i][j].name + "</td></tr>");
+		  			$("#asteroidDataTable > tbody:last-child").append("<tr><td>" + neo[i][j].name + "</td><td>" + neo[i][j].close_approach_data[0].close_approach_date + "</td><td>" + neo[i][j].close_approach_data[0].miss_distance.miles + " miles</td><td>" + neo[i][j].close_approach_data[0].relative_velocity.miles_per_hour + " mph</td></tr>");
 		  		}
 		  	}
 		    console.log(response);
