@@ -17,7 +17,7 @@
 <body>
 
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -59,9 +59,19 @@
 			<img id="apod_img_id" width="1000px" height="1000px"/>
 			<iframe id="apod_vid_id" type="text/html" width="1000px" height="1000px" frameborder="0"></iframe>
 		</div>
-		<p id="copyright"></p>
-		<p id="apodDescription" style="text-align:center"></p>
+		<div class="col-md-8 col-md-offset-2">
+			<p id="copyright"></p>
+		</div>
+		<div class="col-md-8 col-md-offset-2">
+			<p id="apodDescription" style="text-align:center"></p>
+		</div>
 	</div>
+
+	<footer class="page-footer">
+		<div class="cold-md-6">
+			Developed by Henry Welsh
+		</div>
+	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
