@@ -34,7 +34,7 @@
 	     <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	      	<li><a href="#">Today's Photo</a></li>
+	      	<li><a href="photoday.html">Today's Photo</a></li>
 	        <li><a href="yesterdayPhoto.html">Yesterday's Photo</a></li>
 	        <li><a href="tommorowPhoto.html">Tommorow's Photo</a></li>
 	        <li class="active"><a href="dateChoosePhoto.html">Choose A Day</a></li>
@@ -55,15 +55,17 @@
 			</p>
 		</div>
 		<h1 id="apodTitle" style="text-align:center"></h1>
-		<div class="text-center">
-			<img id="apod_img_id" width="1000px" height="1000px"/>
-			<iframe id="apod_vid_id" type="text/html" width="1000px" height="1000px" frameborder="0"></iframe>
+		<div class="row">
+			<div class="col-md-8">
+				<img id="apod_img_id" width="1000px" height="1000px"/>
+				<iframe id="apod_vid_id" type="text/html" width="1000px" height="1000px" frameborder="0"></iframe>
+			</div>
+			<div class="col-md-4">
+				<p id="apodDescription" style="text-align:center"></p>
+			</div>
 		</div>
 		<div class="col-md-8 col-md-offset-2">
 			<p id="copyright"></p>
-		</div>
-		<div class="col-md-8 col-md-offset-2">
-			<p id="apodDescription" style="text-align:center"></p>
 		</div>
 	</div>
 
