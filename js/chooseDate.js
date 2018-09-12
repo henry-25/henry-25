@@ -16,9 +16,11 @@ $(document).ready(function() {
       if(response.media_type === "image") {
         $("#apod_img_id").attr("src", response.hdurl);
         $("#apod_vid_id").css("display", "none");
+        $("#apod_img_id").css("display", "inline-block");
       } else {
         $("#apod_vid_id").attr("src", response.url);
         $("#apod_img_id").css("display", "none");
+        $("#apod_vid_id").css("display", "inline-block");
       }
       $("#apodTitle").text(response.title);
       $("#apodDescription").text(response.explanation);
@@ -41,9 +43,11 @@ $(document).ready(function() {
       if(response.media_type === "image") {
         $("#apod_img_id").attr("src", response.hdurl);
         $("#apod_vid_id").css("display", "none");
+        $("#apod_img_id").css("display", "inline-block");
       } else {
         $("#apod_vid_id").attr("src", response.url);
         $("#apod_img_id").css("display", "none");
+        $("#apod_vid_id").css("display", "inline-block");
       }
       $("#apodTitle").text(response.title);
       $("#apodDescription").text(response.explanation);
