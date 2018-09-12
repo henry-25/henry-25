@@ -15,7 +15,7 @@ $(document).ready(function() {
 		  	var neo = response.near_earth_objects;
 		  	for(i in neo) {
 		  		for(j in neo[i]) {
-		  			$("#asteroidDataTable > tbody:last-child").append("<tr><td>" + neo[i][j].name + "</td><td>" + neo[i][j].close_approach_data[0].close_approach_date + "</td><td>" + Math.floor(neo[i][j].close_approach_data[0].miss_distance.miles) + "</td><td>" + Math.floor(neo[i][j].close_approach_data[0].relative_velocity.miles_per_hour) + "</td></tr>");
+		  			$("#asteroidDataTable > tbody:last-child").append("<tr><td>" + neo[i][j].name + "</td><td>" + neo[i][j].close_approach_data[0].close_approach_date + "</td><td>" + Math.floor(neo[i][j].close_approach_data[0].miss_distance.miles) + "</td><td>" + Math.floor(neo[i][j].close_approach_data[0].relative_velocity.miles_per_hour) + "</td><td>" + neo[i][j].estimated_diameter.miles.estimated_diameter_min.toFixed(4) + " - " + neo[i][j].estimated_diameter.miles.estimated_diameter_max.toFixed(4) + "</td></tr>");
 		  		}
 		  	}
 		  	$("#asteroidDataTable").DataTable();
