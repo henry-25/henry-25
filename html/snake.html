@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-
+	<meta http-equiv="Content-Type" content="text/html">
 	<meta charset="UTF-8">
 	<title>Henry's Website</title>
 
 	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="../css/snake.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,8 +16,6 @@
 </head>
 
 <body>
-
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -27,45 +26,34 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="../index.html">Henry's Website</a>
+	      <a class="navbar-brand" href="#">Henry's Website</a>
 	    </div>
 
 
 	     <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	      	<li><a href="photoday.html">Today's Photo</a></li>
-	        <li><a href="yesterdayPhoto.html">Yesterday's Photo</a></li>
-	        <li class="active"><a href="tommorowPhoto.html">Tommorow's Photo</a></li>
-	        <li><a href="dateChoosePhoto.html">Choose A Day</a></li>
-	        <li><a href="asteroid.html">Asteroids</a></li>
+	        <li><a href="#">This</a></li>
+	        <li><a href="#">Isn't</a></li>
+	        <li><a href="#">The</a></li>
+	        <li><a href="#">Way</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 		</div>
 	</nav>
 
-	<div class="container-fluid">
-		<p style="text-align:center">Time left until new media is posted: <span id="secondsUntilMidnight"></span></p>
-		<p style="text-align:center"><a href="asteroid.html">Maybe check out an asteroid instead?</a></p>
-	</div>
-	<div class="container-fluid">
-		<button id="btn">Play Snake</button>
-		</br>
-		<canvas id="snakeGrid"></canvas>
-	</div>
+	<button id="btn">Start</button>
+</br>
+	<canvas id="snakeGrid"></canvas>
 
 	<footer class="page-footer">
-		<div class="col-md-6">
+		<div class="cold-md-6">
 			Developed by Henry Welsh
-		</div>
-		<div class="col-md-6">
-			Snake game developed based on http://www.competa.com/blog/how-to-build-a-snake-game-using-javascript-and-html5-canvas/
 		</div>
 	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="../js/tommorowPhoto.js"></script>
 	<script src="../js/snake.js"></script>
 </body>
 
